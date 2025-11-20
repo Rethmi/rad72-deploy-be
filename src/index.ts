@@ -30,6 +30,10 @@ app.use("/api/v1/auth", authRouter)
 app.use("/api/v1/post", postRouter)
 app.use("/api/v1/ai", aiRouter)
 
+app.get("/",(req,resl) => {
+  resl.send("BE running")
+})
+
 // sample route with auth
 
 // public
